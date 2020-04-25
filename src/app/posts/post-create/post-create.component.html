@@ -1,4 +1,10 @@
-<input  [(ngModel)]="postInput">
-<hr>
-<button (click)="onAddPost()">Post</button>
+<mat-card>
+  <mat-form-field>
+    <input matInput  placeholder="Your's Comment" [(ngModel)]="postInput">
+  </mat-form-field>
+  <button mat-raised-button
+  color="primary"
+  (click)="onAddPost()">Post</button>
+</mat-card>
+
 <p>{{ postContent }}</p>
