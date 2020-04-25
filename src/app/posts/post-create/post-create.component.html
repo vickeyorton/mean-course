@@ -1,10 +1,13 @@
 <mat-card>
   <mat-form-field>
-    <input matInput  placeholder="Your's Comment" [(ngModel)]="postInput">
+    <input matInput  placeholder="Comment Title" [(ngModel)]="enteredTitle">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput  placeholder="Your's Comment" [(ngModel)]="enteredContent"></textarea>
   </mat-form-field>
   <button mat-raised-button
   color="primary"
   (click)="onAddPost()">Post</button>
 </mat-card>
 
-<p>{{ postContent }}</p>
+<!-- <p>{{ postContent }}</p> -->
