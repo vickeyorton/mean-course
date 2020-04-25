@@ -1,4 +1,4 @@
-<input [value]="'your Comment'" #postInput>
+<input  [(ngModel)]="postInput">
 <hr>
-<button (click)="onAddPost(postInput)">Post</button>
+<button (click)="onAddPost()">Post</button>
 <p>{{ postContent }}</p>

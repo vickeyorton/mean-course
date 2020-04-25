@@ -5,8 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './post-create.component.html'
 })
 export class PostCreateComponent {
+  postInput = "Your's Comment"
   postContent = "";
-  onAddPost(postInput:HTMLInputElement){
-    this.postContent = postInput.value;
+  onAddPost(){
+    this.postContent = this.postInput;
   }
 }
